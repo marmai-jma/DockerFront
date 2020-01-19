@@ -1,0 +1,24 @@
+<nav class="navbar fixed-top navbar-light bg-warning">
+  <a class="navbar-brand" (click)='routeList()'>
+    <!-- Fixed top de Bootstrap -->
+    <img class='img1' src="/assets/logo.png">
+  </a>
+  <!-- <h1>Donne ton avis</h1> -->
+  <app-user></app-user>
+</nav>
+
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col-md-8">
+    <div class="col-lg bg-info">
+      <!-- <i class="fas fa-user"></i> -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+    <div class="col-3 p-4 mb-2 bg-primary text-white">
+      <h5>Recommandations</h5>
+      <app-list-recos></app-list-recos>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

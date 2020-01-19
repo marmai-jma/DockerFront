@@ -1,0 +1,8 @@
+<!-- <p>user works!</p> -->
+<div class="user" ></div>
+<form [formGroup]="userForm" (ngSubmit)="logUser()">
+    Login: <input formControlName="login" [(ngModel)]="user.login">
+    <div>{{message}}</div>
+</form>
+
+<a class="fas fa-user" type="submit" [routerLink]="['/user', user.login]">Informations utilisateur</a>

@@ -1,0 +1,10 @@
+<div class="ReviewComponent bg-warning">
+    <!-- <p>ReviewComponent works!</p> -->
+</div>
+<ng-container class="row" *ngIf="reviewItem">
+    <!-- <p>{{reviewItem.id}}</p> -->
+    <div class="breadcrumb" style="padding:4px; border:4px solid #e0e0e0; width:730px">
+        <p>{{reviewItem.comment}}</p> 
+        <app-useful></app-useful>
+    </div>
+</ng-container>
